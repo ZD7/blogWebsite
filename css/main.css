@@ -12,7 +12,7 @@ body {
     padding: 0;
     font-family: "Inter";
     font-weight: 400;
-    margin: 0;
+    margin: 0 auto;
 }
 
 body * {
@@ -21,17 +21,23 @@ body * {
 
 .container {
     margin: 0 auto;
-    width: 1152px;
+    max-width: 1152px;
+    position: relative;
+}
+
+.container-details {
+    margin: 0 auto;
+    max-width: 973px;
     position: relative;
 }
 
 .container-header {
     display: flex;
-    width: max-content;
+    max-width: 973px;
     justify-content: space-between;
     padding-bottom: 25px;
-    margin-left: 83px;
     padding-top: 36px;
+    margin: 0 auto;
 }
 
 .content-block {
@@ -41,9 +47,12 @@ body * {
 
 .container-footer {
     display: flex;
-    padding: 29px 100px 31px 89px;
+    max-width: 963px;
+    padding-bottom: 31px;
+    padding-top: 29px;
     justify-content: space-between;
     align-items: center;
+    margin: 0 auto;
 }
 
 .cup-coffee-icon {
@@ -64,7 +73,6 @@ body * {
 }
 
 .logo {
-    margin-right: 296px;
     font-size: 20px;
     font-weight: 700;
     line-height: 24px;
@@ -72,7 +80,7 @@ body * {
 
 .header-navigation {
     display: flex;
-    width: 578px;
+    /* width: 578px; */
 }
 
 .header-navigation-list {
@@ -134,13 +142,14 @@ body * {
 }
 
 .container-content {
-    margin-left: 192px;
+    /* margin-left: 192px; */
     position: relative;
-    width: 765px;
+    max-width: 765px;
     font-size: 16px;
     line-height: 20px;
     color:#718096;
-    margin-bottom: 58px;
+    padding-bottom: 58px;
+    margin: 0 auto;
 }
 
 .container-content__title {
@@ -178,20 +187,29 @@ body * {
 }
 
 .image-top {
-    width: 973px;
+    width: 100%;
     height: 380px;
     object-fit: cover;
-    margin-left: 89px;
-    margin-bottom: 41px;
+    padding-bottom: 41px;
+    margin: 0 auto;
+    display: block;
 }
 
 .head-section {
-    background: #FBFBFB;
-    display: flex;
-    padding: 70px 93px 74px 127px;
     height: 476px;
-    gap: 102px;
     margin-bottom: 39px;
+    display: flex;
+    align-items: center;
+    background: #FBFBFB;
+}
+
+.head-section-wrapper {
+    display: flex;
+    width: 932px;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+
 }
 
 .head-section__container {
@@ -368,9 +386,13 @@ body * {
     gap: 9px;
 }
 
-footer {
-    padding-left: 100px;
-}
 .footer-navigation {
     display: flex;
+}
+
+@media screen and (max-width: 1050px) {
+    .scroll-up {
+        right: 10px;
+        bottom: 11px;
+    }
 }
